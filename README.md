@@ -1,3 +1,3 @@
 This is a simple demonstration [kanso](http://kan.so/) application that integrates with [GeoCouch](https://github.com/couchbase/geocouch)'s spatial queries.
 
-Most of what is put together here, has been pulled together from other CouchApp spatial front-ends, with particular thanks going to @maxogden for [polymapper](https://github.com/burritomaps/polymapper), and @vmx for [geocouch-utils](https://github.com/vmx/geocouch-utils).
+Most of what is put together here, has been pulled together from other CouchApp spatial front-ends, with particular thanks going to [@maxogden](/maxogden) for [polymapper](https://github.com/burritomaps/polymapper), and [@vmx](/vmx) for [geocouch-utils](https://github.com/vmx/geocouch-utils).
