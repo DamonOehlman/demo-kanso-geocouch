@@ -1,0 +1,15 @@
+{
+    "name": "spatial-demo",
+    "version": "0.0.1",
+    "description": "Simple GeoCouch Demo",
+    "attachments": ["index.html", "dist"],
+    "modules": ["lib"],
+    "load": "lib/app",
+    "dependencies": {
+        "attachments": null,
+        "handlebars": null,
+        "modules": null,
+        "properties": null,
+        "db": null
+    }
+}

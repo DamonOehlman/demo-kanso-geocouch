@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Basic Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="red" />    
+    <link href="dist/geocouch-demo.css" rel="stylesheet">
+    <style>
+    #mapContainer {
+        height: 400px;
+    }
+    
+      @media (min-width: 980px) {
+          body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="testModal" class="modal hide fade">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal" >&times;</a>
+        <h3>Please Confirm</h3>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to see the About page?</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#ok" class="btn btn-primary" data-dismiss="modal">OK</a>
+        <a href="#cancel" class="btn" data-dismiss="modal">Cancel</a>
+      </div>
+    </div>
+
+    <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">GeoCouch + Kanso Demo</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
+    <div id="main" class="container-fluid flipper">
+      <section class="row-fluid" data-route="/">
+          <div class="span12" id="mapContainer">
+          </div>
+      </section>
+      <section class="row-fluid" id="settings" data-route="settings.html" data-title="Settings">
+          <form class="well">
+            <label>Label name</label>
+            <input type="text" class="span3" placeholder="Type something…"> <span class="help-inline">Associated help text!</span>
+            <label class="checkbox">
+              <input type="checkbox"> Check me out
+            </label>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+      </section>
+      <section class="row-fluid" id="about" data-route="about.html">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra eros id quam vestibulum faucibus. In a libero ipsum, eu pulvinar nibh. Nulla non congue lacus. Pellentesque ligula risus, mollis vel placerat vel, consectetur ac ante. Vestibulum convallis fringilla est quis accumsan. Aliquam mollis neque eu turpis euismod eget blandit lectus lacinia. Proin purus dolor, scelerisque sed tempor volutpat, aliquet in lectus. Fusce euismod mauris sed enim suscipit id laoreet arcu imperdiet.</p>
+        <p>Vestibulum vel aliquam lectus. Quisque ipsum nibh, auctor mollis dictum eget, sodales ut lectus. Vivamus fermentum dictum odio quis hendrerit. Nam cursus varius metus, a varius lorem mollis sit amet. Nulla imperdiet ultrices lorem non egestas. Praesent faucibus magna vel dui tempus eget commodo sem lacinia. Quisque iaculis magna nec metus suscipit dapibus pellentesque felis convallis. Donec diam nibh, varius sed viverra suscipit, bibendum sed lacus. Aenean eu nunc et ipsum viverra ullamcorper. Quisque lacus eros, suscipit sed sollicitudin eget, lacinia sed metus.</p>
+      </section>
+      <section class="row-fluid" id="not-found">
+        <h1>Whoops!</h1>
+        <p>The page you're looking for cannot be found. Sorry!</p>
+      </section>
+    </div>
+    <script src="modules.js"></script>
+    <script src="dist/geocouch-demo.js"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js"></script>
+  </body>
+</html>
